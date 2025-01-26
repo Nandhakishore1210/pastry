@@ -1,223 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f9f5f2; color: #333;">
-    <div style="background-color: #ffcc99; padding: 20px; text-align: center;">
-        <h1 style="margin: 0; font-size: 2.5em; color: #b35900;">SHOP</h1>
+<body>
+    <div class="header">
+        <h1>SHOP</h1>
     </div>
-    <div style="background-color: #ffe6cc; padding: 10px 0; text-align: center;">
-        <a href="Home.html" style="margin: 0 15px; text-decoration: none; font-size: 1.1em; color: #804000; font-weight: bold;">Home</a>
-        <a href="about.html" style="margin: 0 15px; text-decoration: none; font-size: 1.1em; color: #804000; font-weight: bold;">About Us</a>
-        <a href="contact.html" style="margin: 0 15px; text-decoration: none; font-size: 1.1em; color: #804000; font-weight: bold;">Contact Us</a>
-        <a href="cart.html" style="margin: 0 15px; text-decoration: none; font-size: 1.1em; color: #804000; font-weight: bold;">🛒 CART</a>
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart.html">🛒 CART</a>
     </div>
-    <div style="padding: 20px;">
-        <h2 style="color: #b35900;">Breads</h2>
-        <hr style="border: 0; border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="lab bread.jpeg" alt="Multigrain Bread" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Multigrain Bread - Rs. 120</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="bread_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="bread_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
+    <div class="content">
+        <section>
+            <h2>Breads</h2>
+            <hr>
+            <div class="card-container">
+                <div class="card">
+                    <img src="lab bread.jpeg" alt="Multigrain Bread">
+                    <h5>Multigrain Bread - Rs. 120</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="bread_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="bread_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
             </div>
-        </div>
-        <h2 style="color: #b35900; margin-top: 40px;">Pastries</h2>
-        <hr style="border: 0; border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="lab cinamon.jpeg" alt="Cinnamon Rolls" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Cinnamon Rolls - Rs. 160</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="pastries_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="pastries_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
+        </section>
+        <section>
+            <h2>Pastries</h2>
+            <hr>
+            <div class="card-container">
+                <div class="card">
+                    <img src="lab cinamon.jpeg" alt="Cinnamon Rolls">
+                    <h5>Cinnamon Rolls - Rs. 160</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="pastries_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="pastries_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="croissant lab.jpeg" alt="Croissant">
+                    <h5>Croissant - Rs. 150</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="croissant_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="croissant_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
             </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="croissant lab.jpeg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Croissant - Rs. 150</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <h2 style="color: #b35900; margin-top: 40px;">COOKIES</h2>
-        <hr style="border: 0; border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="cc cokie.jpg" alt="Choco chip" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Choco chip cookie - Rs.98</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="sugar cookie.jpg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Sugar cookies - Rs. 82</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="Macrons.jpg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Macrons - Rs.  64</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <h2 style="color: #b35900; margin-top: 40px;">CUP CAKES</h2>
-        <hr style="border: 0; border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="vcc.jpg" alt="Choco chip" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Vannila cup cake with buttercream frosting- Rs.93</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="cgc.jpg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Chocolate Ganache cupcakes- Rs. 100</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-        <h2 style="color: #b35900; margin-top: 40px;">CAKES</h2>
-        <hr style="border: 0; border-top: 1px solid #ddd;">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="oreo.jpg" alt="Choco chip" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">OREO CAKE- Rs.549</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="chocochip_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="choco cake.jpg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Chocolate cake- Rs. 449</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div style="border: 1px solid #ddd; border-radius: 8px; background-color: #fff; padding: 15px; width: 250px; text-align: center;">
-                <img src="cheesecake.jpg" alt="Croissant" style="width: 100%; height: auto; border-radius: 8px;">
-                <h5 style="margin: 10px 0; color: #333;">Cheesecake- Rs. 320</h5>
-                <form>
-                    <input type="number" placeholder="Qty" style="width: 50px; margin-bottom: 10px;">
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="buy"> Buy Now
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="croissant_action" value="cart"> Add to Cart
-                        </label>
-                    </div>
-                </form>
-            </div>
+        </section>
     </div>
 </body>
 </html>

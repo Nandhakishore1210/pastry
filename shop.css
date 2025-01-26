@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f2;
+    color: #333;
+}
+
+.header {
+    background-color: #ffcc99;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #b35900;
+}
+
+.navbar {
+    background-color: #ffe6cc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #804000;
+    font-weight: bold;
+}
+
+.content section {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #b35900;
+}
+
+.content hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h5 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Media Queries */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 200px;
+    }
+}
+
+/* Tablets (portrait) and large smartphones */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+    }
+
+    .card {
+        width: 180px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
