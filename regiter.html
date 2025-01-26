@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Register for Bosinii's Pastry</h1>
+        <p>Create your account and start shopping today!</p>
+    </div>
+    <div class="register-section">
+        <h2>Create an Account</h2>
+        <form action="register.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter a username" required>
+             
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="Home.html">Login here</a></p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Bosinii's Bakery</p>
+    </footer>
+</body>
+</html>

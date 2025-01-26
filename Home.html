@@ -17,9 +17,21 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
         <a href="cart.html">🛒CART</a>
+        <a href="#login-section">Login</a>
     </nav>
     <div class="image-container">
         <img src="bakeryy.png" alt="Bosinii's Bakery">
+    </div>
+    <div id="login-section" class="login-section">
+        <h2>Login to Your Account</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="regiter.html">Register here</a></p>
     </div>
     <footer class="footer">
         <p>&copy; 2025 Bosinii's Bakery</p>

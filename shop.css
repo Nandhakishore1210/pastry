@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -32,15 +32,16 @@ body {
     font-weight: bold;
 }
 
-.content section {
+.content {
     padding: 20px;
 }
 
-.content h2 {
+h2 {
     color: #b35900;
+    margin-top: 40px;
 }
 
-.content hr {
+hr {
     border: 0;
     border-top: 1px solid #ddd;
 }
@@ -49,6 +50,7 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -71,54 +73,22 @@ body {
     color: #333;
 }
 
-.card form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.card form input[type="number"] {
+    width: 50px;
+    margin-bottom: 10px;
 }
 
-/* Media Queries */
-
-/* Tablets and small laptops */
-@media (max-width: 1024px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .navbar a {
-        font-size: 1em;
-    }
-
-    .card-container {
-        justify-content: center;
-    }
-
+.card form label {
+    display: block;
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
     .card {
         width: 200px;
     }
 }
 
-/* Tablets (portrait) and large smartphones */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 1.8em;
-    }
-
-    .navbar a {
-        font-size: 0.9em;
-    }
-
-    .card {
-        width: 180px;
-    }
-}
-
-/* Smartphones */
 @media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
-
     .navbar a {
         display: block;
         margin: 10px 0;
@@ -126,10 +96,5 @@ body {
 
     .card {
         width: 100%;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
     }
 }

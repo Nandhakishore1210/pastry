@@ -1,0 +1,58 @@
+
+.register-section {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-section h2 {
+    margin-bottom: 20px;
+    color: #b35900;
+}
+
+.register-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.register-section button {
+    background-color: #ffcc99;
+    color: #b35900;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-section button:hover {
+    background-color: #e6b380;
+}
+
+.register-section p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.register-section a {
+    color: #b35900;
+    text-decoration: none;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}

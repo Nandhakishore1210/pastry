@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="shop.css">
 </head>
 <body>
-    <div class="header">
+    <!-- Header Section -->
+    <header class="header">
         <h1>SHOP</h1>
-    </div>
-    <div class="navbar">
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
         <a href="Home.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
         <a href="cart.html">🛒 CART</a>
-    </div>
-    <div class="content">
-        <section>
+    </nav>
+    <main>
+        <section class="category">
             <h2>Breads</h2>
             <hr>
-            <div class="card-container">
-                <div class="card">
+            <div class="product-container">
+                <div class="product">
                     <img src="lab bread.jpeg" alt="Multigrain Bread">
                     <h5>Multigrain Bread - Rs. 120</h5>
                     <form>
@@ -32,11 +35,11 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="category">
             <h2>Pastries</h2>
             <hr>
-            <div class="card-container">
-                <div class="card">
+            <div class="product-container">
+                <div class="product">
                     <img src="lab cinamon.jpeg" alt="Cinnamon Rolls">
                     <h5>Cinnamon Rolls - Rs. 160</h5>
                     <form>
@@ -45,7 +48,7 @@
                         <label><input type="radio" name="pastries_action" value="cart"> Add to Cart</label>
                     </form>
                 </div>
-                <div class="card">
+                <div class="product">
                     <img src="croissant lab.jpeg" alt="Croissant">
                     <h5>Croissant - Rs. 150</h5>
                     <form>
@@ -56,6 +59,89 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section class="category">
+            <h2>Cakes</h2>
+            <hr>
+            <div class="product-container">
+                <div class="product">
+                    <img src="oreo.jpg" alt="OREO Cake">
+                    <h5>OREO CAKE - Rs. 549</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="oreo_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="oreo_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
+                <div class="product">
+                    <img src="choco cake.jpg" alt="Chocolate Cake">
+                    <h5>Chocolate Cake - Rs. 449</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="choco_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="choco_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
+                <div class="product">
+                    <img src="cheesecake.jpg" alt="Cheesecake">
+                    <h5>Cheesecake - Rs. 320</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="cheesecake_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="cheesecake_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Cookies</h2>
+            <hr>
+            <div class="product-container">
+                <div class="product">
+                    <img src="cc cokie.jpg" alt="Choco Chip">
+                    <h5>Choco Chip Cookie - Rs. 98</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="choco_chip_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="choco_chip_action" value="cart"> Add to Cart</label>
+                    </form>
+                    <img src="sugar cookie.jpg" alt="Sugar Cookies">
+                    <h5>Sugar Cookies - Rs. 82</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="sugar_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="sugar_action" value="cart"> Add to Cart</label>
+                    </form>
+                </div>
+                    <img src="Macrons.jpg" alt="Macarons">
+                    <h5>Macarons - Rs. 64</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="macarons_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="macarons_action" value="cart"> Add to Cart</label>
+                    </form>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Cupcakes</h2>
+            <hr>
+            <div class="product-container">
+                <div class="product">
+                    <img src="vcc.jpg" alt="Vanilla Cupcake">
+                    <h5>Vanilla Cupcake - Rs. 93</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="vanilla_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="vanilla_action" value="cart"> Add to Cart</label>
+                    </form>
+                    <img src="cgc.jpg" alt="Chocolate Cupcake">
+                    <h5>Chocolate Cupcake - Rs. 100</h5>
+                    <form>
+                        <input type="number" placeholder="Qty">
+                        <label><input type="radio" name="choco_cupcake_action" value="buy"> Buy Now</label>
+                        <label><input type="radio" name="choco_cupcake_action" value="cart"> Add to Cart</label>
+                    </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
